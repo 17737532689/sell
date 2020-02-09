@@ -35,7 +35,7 @@ public class WechatController {
     private ProjectUrlConfig projectUrlConfig;
 
     /**
-     *     微信公众支付授权
+     *    微信公众支付授权
      *
      * @param returnUrl
      * @return
