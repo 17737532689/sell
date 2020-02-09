@@ -43,7 +43,7 @@ public class WechatController {
      */
     @GetMapping("/authorize")
     public String authorize(@RequestParam("returnUrl") String returnUrl) {
-        //1. 配置
+        //1.    配置
         //2. 调用方法
       //  String url = "http://sell.natapp4.cc/sell/wechat/userInfo";
         String url = projectUrlConfig.getWechatMpAuthorize() + "/sell/wechat/userInfo";
