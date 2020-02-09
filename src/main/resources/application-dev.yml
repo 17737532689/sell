@@ -1,0 +1,59 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123
+    url: jdbc:mysql://127.0.0.1:3306/sell?characterEncoding=utf-8&useSSL=false&&serverTimezone=UTC
+  jpa:
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+  redis:
+    host: 122.51.89.36
+    port: 6379
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+##  path: /var/log/tomcat/
+#  file: /var/log/tomcat/sell.log
+#  level:
+#    com.imooc.LoggerTest: debug
+
+wechat:
+  # 公众账号, 授权
+  mpAppId: wxe35e2ffcf4d13820
+  mpAppSecret: eccb5beb205f15e1ebd28403d91e4b8f
+
+  # 开放平台,  卖家扫码登录用
+  openAppId: wx6ad144e54af67d87
+  openAppSecret: 91a2ff6d38a2bbccfb7e9f9079108e2e
+
+  # 支付/商户号
+  mchId: 1483469312
+  mchKey: C5245D70627C1F8E9964D494B0735025
+  # 发起支付不需要证书, 退款需要
+  keyPath: E:/vm/h5.p12
+  notifyUrl: http://sell.natapp4.cc/sell/pay/notify
+  templateId:
+    orderStatus: 4Ysj7aeIO72_egI8Eo1S2XpE5v6GQLh5V0NOB0lu6rQ
+
+projectUrl:
+  wechatMpAuthorize: http://aimeigou.natapp1.cc
+  wechatOpenAuthorize: http://aimeigou.natapp1.cc
+  sell: http://localhost:8080
+logging:
+  level:
+    com.imooc.dataobject.mapper: trace
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+# 又拍云服务 见 https://console.upyun.com/services/file/
+upyun:
+  bucketName: XXX
+  userName: xxx
+  password: xxxx
+  imageHost: http://xxx.com/
+server:
+  servlet:
+    context-path: /sell
+
