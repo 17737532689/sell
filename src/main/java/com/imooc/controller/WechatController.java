@@ -37,7 +37,6 @@ public class WechatController {
     /**
      * 微信公众支付授权
      *
-     *
      * @param returnUrl
      * @return
      */
